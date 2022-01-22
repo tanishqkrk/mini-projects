@@ -90,3 +90,29 @@ body {
 
 /* .links-link--link:hover {
 } */
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 440px) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 330px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .links-link--link {
+        font-size: 15px;
+    }
+
+    .links-link {
+        margin: 15px 0;
+    }
+}
