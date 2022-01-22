@@ -16,7 +16,34 @@ body {
 
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #F05454 #ffffff;
+}
 
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+    /* scrollbar-color: #F05454 #ffffff; */
+
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 20px;
+    /* width: 5px; */
+
+}
+
+*::-webkit-scrollbar-thumb {
+
+    background-color: #b83f3f;
+    /* border-radius: 10px; */
+    /* border: 3px solid #ffffff; */
+}
 
 .calculator {
     display: flex;
@@ -26,7 +53,7 @@ body {
     border-radius: 10px;
     background-color: #30475E;
     width: 30rem;
-    height: 35rem;
+    height: 30rem;
     padding: 1.5rem;
     margin: 50px 0;
     /* border: 5px solid #F05454; */
@@ -43,10 +70,10 @@ body {
     font-weight: 900;
     color: white;
     font-size: 50px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: end;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* text-align: end; */
     margin: 20px 0;
     border-radius: 20px;
     /* bottom: 500px; */
@@ -55,12 +82,12 @@ body {
     /* max-width: 30rem; */
     /* width: 100%; */
     /* max-width: 450px; */
-    height: 10rem;
-    max-height: 10rem;
+    height: 5rem;
+    /* max-height: 10rem; */
     /* overflow-y: none; */
     /* overflow-x: scroll; */
     overflow: auto;
-    direction: inherit;
+    direction: rtl;
 
 }
 
@@ -70,7 +97,9 @@ body {
     /* padding: 10px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
+    grid-gap: 30px;
+    justify-items: center;
+    align-content: center;
 }
 
 .button {
@@ -84,8 +113,8 @@ body {
     text-align: center;
     /* padding: 10px; */
     background-color: white;
-    width: 100%;
-    height: 100%;
+    width: 5rem;
+    height: 4rem;
     box-shadow: 0px 4px 0px 2px rgba(240, 84, 84, 0.82);
 }
 
