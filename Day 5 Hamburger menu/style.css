@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(299deg, #24eeba, #1206b4, #a29bff, #e89bff, #ff00b2);
+    background-size: 1000% 1000%;
+    padding: 0 80px;
+    -webkit-animation: AnimationName 0s ease infinite;
+    -moz-animation: AnimationName 0s ease infinite;
+    animation: AnimationName 0s ease infinite;
+    font-family: 'Rubik Beastly', cursive;
+    font-size: 20px;
+    color: white;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 68% 0%
+    }
+
+    50% {
+        background-position: 33% 100%
+    }
+
+    100% {
+        background-position: 68% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 68% 0%
+    }
+
+    50% {
+        background-position: 33% 100%
+    }
+
+    100% {
+        background-position: 68% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 68% 0%
+    }
+
+    50% {
+        background-position: 33% 100%
+    }
+
+    100% {
+        background-position: 68% 0%
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_elements-div {
+    padding: 0 20px;
+}
+
+.header_ham-div {
+    display: none;
+}
+
+.header_elements_menu {
+    display: flex;
+}
+
+.header_elements_menu-ham {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .header_ham-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .header_ham {
+        font-size: 40px;
+    }
+
+    .header_elements_menu {
+        display: none;
+    }
+
+    .header_ham-div:hover>.header_elements_menu-ham {
+        max-width: 700px;
+        margin: auto;
+        /* transform: scale(1.5); */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(176, 176, 255);
+        position: absolute;
+        top: .1%;
+        left: .1%;
+        /* bottom: 100%; */
+        right: .1%;
+        overflow-x: hidden;
+
+    }
+
+    .header_elements-ham {
+        font-size: 50px;
+        margin: 60px 0;
+    }
+}
