@@ -48,27 +48,29 @@ body {
 }
 
 .content_searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: .5px solid #aaa;
-    border-radius: 50px;
-    height: 40px;
-    width: 40%;
+    margin: 0 auto;
+    width: 575px;
+    border-radius: 30px;
+    border: 1px solid #dcdcdc;
+    padding: 1px;
 }
 
 
 .content_searchbar:hover {
-    background-color: #aaa;
+    /* background-color: #aaa; */
 }
 
 .content_searchbar-textbox {
-    /* margin: 25px; */
-    /* width: 200px; */
-    border-radius: 100px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 45px;
     border: none;
-    width: 90%;
-    height: 90%;
+    width: 500px;
+    font-size: 16px;
+    outline: none;
 }
 
 
