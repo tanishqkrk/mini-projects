@@ -1,0 +1,263 @@
+@font-face {
+    font-family: ITC;
+    src: url(./assets/blair-itc-medium-6946.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Cinzel', serif;
+    background: black;
+    user-select: none;
+}
+
+.hero-img {
+    background-image: url(./assets/hero/cover.jpg);
+    background-size: cover;
+    height: 50rem;
+    filter: brightness(50%);
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* vertical-align: bottom; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header__head--title-title {
+    font-size: 20px;
+}
+
+.header__head--links-link-head-text {
+    font-size: 11px;
+    hyphens: none;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.header__head--links-link-head-text:hover {
+    color: inherit;
+}
+
+.content__hero {
+    text-align: center;
+}
+
+.header {
+    margin: 40px 0;
+    font-family: ITC;
+}
+
+.content__hero {
+    margin-top: 100px;
+}
+
+.header,
+.content__hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.content__hero--logo-img {
+    width: 100px;
+    /* font-size: 100px; */
+
+}
+
+.content__hero--heading {
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.content__hero--subheading {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.content__hero--pracareabtn {
+    margin-top: 80px;
+}
+
+.content__hero--pracareabtn-btn {
+    /* margin-top: 5000px; */
+    color: black;
+    padding: 10px;
+    background: rgb(224, 210, 82);
+    width: fit-content;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.content__pracarea {
+    /* top: 100px; */
+    /* position: absolute; */
+    margin-bottom: 100px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.lawcard-head,
+.lawcard-des,
+.lawcard-btn {
+    text-align: center;
+}
+
+.content__pracarea-img {
+    margin: 15px 0;
+
+    display: flex;
+    justify-content: center;
+    /* width: 5px; */
+}
+
+.content__pracarea-img--img {
+    width: 50px;
+}
+
+.lawcard-head {
+    margin: 15px 0;
+
+    font-size: 30px;
+    color: rgb(224, 210, 82);
+}
+
+.content__pracarea-gry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(36, 36, 36);
+    padding: 20px;
+    height: 28rem;
+}
+
+.content__pracarea-bl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(1, 1, 31);
+    padding: 20px;
+    height: 28rem;
+
+}
+
+.lawcard-des {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.lawcard-btn {
+    padding: 10px;
+    width: fit-content;
+    background: black;
+    border: 1px solid rgb(224, 210, 82);
+    width: 200px;
+}
+
+.content_aboutus {
+    /* border: 1px solid rgb(224, 210, 82); */
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+.content__aboutus-aboutus {
+    /* background: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__aboutus--aboutus-head {
+    font-size: 50px;
+    color: rgb(224, 210, 82);
+    font-weight: 700;
+}
+
+.content__aboutus--welcome-img {
+    filter: brightness(70%);
+    width: 700px;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.content__aboutus--welcome-text {
+    text-shadow: -1px 0px 7px rgba(0, 0, 0, 0.76);
+    /* border-radius: 1px solid rgb(224, 210, 82); */
+    position: absolute;
+    color: rgb(224, 210, 82);
+    top: 93rem;
+    left: 50rem;
+    font-size: 50px;
+    /* font-weight: 700; */
+}
+
+.content__partners--heading {
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(224, 210, 82);
+}
+
+.content__partners--des {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content__partners--partner-img {
+    padding: 0;
+    margin: 0;
+    /* width: 250px; */
+    width: 100%;
+}
+
+.content__partners--partner {
+    border: 8px solid rgb(224, 210, 82);
+    padding: 0;
+    color: black;
+    margin: 0 15px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content_partners {
+    margin-bottom: 80px;
+}
+
+.content__partners--partner-name {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(163, 152, 55);
+    /* text-shadow: -1px 0px 7px rgba(0, 0, 0, 0.76); */
+}
+
+.content__partners--partner-des {
+    text-align: center;
+    font-size: 12px;
+}
+
+.content__partners--partner-contact {
+    margin: 20px 0;
+    padding: 10px;
+    background: rgb(224, 210, 82);
+}
