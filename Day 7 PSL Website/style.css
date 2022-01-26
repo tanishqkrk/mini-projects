@@ -9,7 +9,7 @@ body {
     color: white;
     font-family: 'Cinzel', serif;
     background: black;
-    user-select: none;
+    /* user-select: none; */
 }
 
 .hero-img {
@@ -260,4 +260,143 @@ body {
     margin: 20px 0;
     padding: 10px;
     background: rgb(224, 210, 82);
+}
+
+.content_contactus {
+    /* border: 1px solid red; */
+    margin: 50px 0;
+    height: 30rem;
+}
+
+
+.content__contactus--box {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content__contactus--form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content__contactus--box-box {
+    padding: 0 20px;
+    text-shadow: -1px 0px 7px rgba(0, 0, 0, 0.76);
+    /* border-radius: 1px solid rgb(224, 210, 82); */
+    position: absolute;
+    color: rgb(224, 210, 82);
+    top: 172rem;
+    /* right: 45rem; */
+    /* left: 5rem; */
+    font-size: 40px;
+    z-index: 1;
+    /* font-weight: 700; */
+}
+
+.content__contactus--box-img--img {
+    clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    filter: brightness(50%);
+
+}
+
+.content__contactus--form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "name phone"
+        "email email"
+        "message message"
+        "submit submit";
+}
+
+.content__contactus--form-email {
+    grid-area: email;
+}
+
+.content__contactus--form-phone {
+    grid-area: phone;
+}
+
+.content__contactus--form-message {
+    grid-area: message;
+}
+
+.content__contactus--form-name {
+    grid-area: name;
+}
+
+.content__contactus--form-submit {
+    grid-area: submit;
+}
+
+.content__contactus--form-email-box,
+.content__contactus--form-name-box,
+.content__contactus--form-phone-box,
+.content__contactus--form-message-box {
+    width: 100%;
+    padding: 10px;
+    border: 7px solid rgb(224, 210, 82);
+    /* height: 100%; */
+}
+
+.content__contactus--form-email-box,
+.content__contactus--form-name-box,
+.content__contactus--form-phone-box {
+    /* width: 100%; */
+    height: 100px;
+}
+
+.content__contactus--form-message-box {
+    height: 120px;
+}
+
+.content__contactus--form-submit {
+    background-color: rgb(224, 210, 82);
+    color: black;
+    padding: 20px;
+    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.content_testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+    background-color: rgb(26, 25, 25);
+}
+
+.content__testimonials--head {
+    font-size: 50px;
+    color: rgb(224, 210, 82);
+}
+
+#myCarousel {
+    height: 9rem;
+}
+
+.footer {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.footer_head {
+    font-size: 30px;
+    color: rgb(224, 210, 82);
 }
