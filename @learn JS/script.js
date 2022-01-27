@@ -2,4 +2,4 @@
 // let b = Number(prompt('Enter b: '));
 
 // alert(a+b);
-
+console.log('Hello World');
