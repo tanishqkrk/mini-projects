@@ -1,0 +1,130 @@
+* {
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header {
+    /* padding: 0 500px; */
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin: 20px 0;
+    color: white;
+    width: 100%;
+    text-shadow: 1px -1px 5px rgba(0, 0, 0, 0.19);
+}
+
+.header_main-logo--logo {
+    width: 200px;
+    height: 50px;
+}
+
+.header_main {
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header_misc {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header_main-element {
+    margin: 0 15px;
+}
+
+.header_misc-element {
+    margin: 0 15px;
+}
+
+.content {
+    /* padding: 0 50px; */
+}
+
+.content_1 {
+    background-image: url(./assests/content_1.webp);
+    background-size: cover;
+}
+
+.content_2 {
+    background-image: url(./assests/content_2.webp);
+    background-size: cover;
+
+}
+
+.content_3 {
+    background-image: url(./assests/content_3.webp);
+    background-size: cover;
+
+}
+
+.content_4 {
+    background-image: url(./assests/content_4.webp);
+    background-size: cover;
+
+}
+
+.content_5 {
+    background-image: url(./assests/content_5.webp);
+    background-size: cover;
+
+}
+
+.content_6 {
+    background-image: url(./assests/content_6.webp);
+    background-size: cover;
+
+}
+
+.content_section {
+    color: white;
+    height: 75vh;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    padding-top: 200px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.55);
+}
+
+.content_1-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content_1-title {
+    width: 60%;
+    font-size: 45px;
+    font-weight: 900;
+    white-space: wrap;
+    hyphens: none;
+}
+
+.content_1-button {
+    border: 1px solid white;
+    padding: 20px 60px;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.footer {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 300px;
+}
+
+.footer_logo {
+    font-weight: 100;
+}
