@@ -22,6 +22,8 @@ body {
 .header_main-logo--logo {
     width: 200px;
     height: 50px;
+    padding-right: 50px;
+    padding-left: 30px;
 }
 
 .header_main {
@@ -110,13 +112,6 @@ body {
     hyphens: none;
 }
 
-.content_1-button {
-    border: 1px solid white;
-    padding: 20px 60px;
-    width: fit-content;
-    margin-top: 50px;
-}
-
 .footer {
     background: black;
     color: white;
@@ -127,4 +122,48 @@ body {
 
 .footer_logo {
     font-weight: 100;
+}
+
+
+.content_1-button {
+    margin-top: 50px;
+    padding: 20px 60px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid white;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    width: fit-content;
+    /* text-shadow: none; */
+    z-index: 0;
+
+}
+
+.content_1-button:hover {
+    color: #000 !important;
+    background-color: white;
+    text-shadow: none;
+
+}
+
+.content_1-button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+
+.content_1-button:before {
+    /* margin: 0 5px; */
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: white;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }

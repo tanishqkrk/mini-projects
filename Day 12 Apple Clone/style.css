@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1D1D1F;
+    opacity: .9;
+    color: #aaa;
+    /* padding: 10px 0; */
+    padding: 1.5vh 0;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    /* margin-bottom: 500px; */
+}
+
+.header-element {
+    margin: 0 20px;
+    font-size: 13px;
+    /* opacity: .5; */
+    transition: .3s;
+}
+
+.header-element:hover {
+    color: white;
+    /* opacity: 1; */
+}
+
+.fa-apple {
+    font-size: 20px;
+    /* opacity: .9; */
+}
+
+.content-section-bg {
+    /* padding-bottom: 12px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    /* padding: 0; */
+}
+
+.content-section-bg-img,
+.content-section-ex-bg-img {
+    /* transform: translate(5); */
+    /* transform: scale(.5); */
+    /* width: 100vh; */
+    /* height: 100%; */
+    width: 80%;
+    /* position: relative; */
+    /* border: 1px solid red; */
+    margin: 0;
+    /* flex: 0 0 auto; */
+    /* top: 0; */
+
+}
+
+.content-section {
+    padding-top: 70px;
+    margin-bottom: 10px;
+    /* height: 200%; */
+    /* width: 100vh; */
+    /* width: 100vh; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.content-section-title {
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.content-section-subtitle {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.content_iphone13pro {
+    /* text-align: center; */
+    background-color: #FBFBFD;
+}
+
+.content_iphone13 {
+    background-color: #35283C;
+}
+
+.content_mac {
+    background-color: #FBFBFD;
+}
+
+.ex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-section-learn,
+.content-section-buy {
+    margin: 15px 25px;
+    color: rgb(81, 81, 248);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-section-learn::after,
+.content-section-buy::after {
+    display: inline;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding: 0 15px;
+    content: "\f054";
+
+}
+
+.iphone13-title {
+    color: white;
+}
+
+.iphone13-subtitle {
+    color: pink;
+}
+
+.content_extra {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.content_extra-watch,
+.content_extra-ipad,
+.content_extra-valentine,
+.content_extra-airpods,
+.content_extra-reasons,
+.content_extra-tv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.content-section-ex-bg-img {
+    /* width: 100%; */
+}
+
+.content-section-watch {
+    width: 100%;
+    /* position: relative; */
+}
+
+.content_extra-watch {
+    background-color: #F5F5F7;
+}
+
+.aw {
+    /* position: absolute; */
+    width: 20%;
+}
