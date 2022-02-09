@@ -322,11 +322,21 @@ body {
     .content__hero--title-title {
         font-size: 150px;
     }
+
+    .content__shop--gallery {
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+    }
 }
 
 @media(max-width: 512px) {
     .content__hero--title-title {
-        font-size: 120px;
+        font-size: 110px;
+    }
+
+
+    .content__review--data {
+        font-size: 50px;
     }
 }
 
@@ -337,8 +347,36 @@ body {
     }
 }
 
-@media(max-width: 335px) {
+@media(max-width: 340px) {
     .content__hero--title-title {
         font-size: 80px;
+    }
+
+    .content__handmade--data-title {
+        font-size: 40px;
+    }
+
+    .content__shop--title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .content__handmade--data-title {
+        font-size: 40px;
+    }
+
+    .content__shop--title {
+        font-size: 35px;
+    }
+
+    .content__shop--gallery {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .content__shop--gallery-photos {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
     }
 }
