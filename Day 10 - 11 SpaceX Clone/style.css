@@ -1,3 +1,8 @@
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
 * {
     text-transform: uppercase;
 }
@@ -49,6 +54,7 @@ body {
 }
 
 .content {
+    /* display: flex; */
     /* padding: 0 50px; */
 }
 
@@ -88,6 +94,9 @@ body {
 }
 
 .content_section {
+    /* width: 100%; */
+    /* flex: none; */
+    scroll-snap-align: start;
     color: white;
     height: 75vh;
     /* height: 100%; */
@@ -113,6 +122,7 @@ body {
 }
 
 .footer {
+    /* scroll-snap-align: end; */
     background: black;
     color: white;
     display: flex;
