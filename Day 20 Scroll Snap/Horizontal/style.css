@@ -9,6 +9,8 @@ html {
 * {
     scrollbar-width: auto;
     scrollbar-color: #8f54a0 #ffffff;
+    width: 0;
+    height: 0;
 }
 
 /* Chrome, Edge, and Safari */
