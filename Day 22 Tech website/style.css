@@ -31,8 +31,8 @@ body {
 
 .content--section {
     padding: 0 10px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     /* justify-content: center; */
     height: 100vh;
     width: 100vw;
@@ -49,15 +49,25 @@ body {
     background-attachment: fixed;
     color: white;
     font-weight: 800;
+    width: 100vw;
 }
 
 .content__power {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     background: url(./assests/plasma.jpg);
     background-attachment: fixed;
     background-size: cover;
+    /* font-style: italic; */
     color: white;
-    font-weight: 500;
-    font-style: italic;
+    width: 100%;
+
+}
+
+.content__power--title {
+    color: white;
+    font-weight: 800;
 }
 
 .content__secure {
@@ -65,20 +75,55 @@ body {
     background-attachment: fixed;
     background-size: cover;
     color: white;
+    width: 100%;
+
     font-weight: 500;
     text-align: center;
 
 }
 
 .content__secure--title {
-    margin-top: 25px;
+    /* margin-top: 25px; */
+    /* text-align: center; */
+    font-weight: 800;
+    /* width: 40%; */
 }
 
 .content__register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: black;
+    color: white;
+}
+
+.content__register--form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__register--form-email-box {
+    width: 50vw;
+    height: 5vh;
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+.content__register--form-send {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(72, 72, 255);
+    width: fit-content;
 }
 
 .footer {
     background: black;
-
 }
