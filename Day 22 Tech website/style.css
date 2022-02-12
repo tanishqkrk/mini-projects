@@ -107,10 +107,15 @@ body {
 }
 
 .content__register--form-email-box {
-    width: 50vw;
+    width: 10vw;
     height: 5vh;
     margin: 50px 0;
     font-size: 20px;
+    transition: .3s;
+}
+
+.content__register--form-email-box:focus {
+    width: 50vw;
 }
 
 .content__register--form-send {
