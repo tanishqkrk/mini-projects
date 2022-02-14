@@ -9,15 +9,31 @@ body {
     align-items: center;
 }
 
+* {
+    box-shadow: 0px -1px 292px -30px rgba(62, 11, 255, 0.75);
+    -webkit-box-shadow: 0px -1px 292px -30px rgba(62, 11, 255, 0.75);
+    -moz-box-shadow: 0px -1px 292px -30px rgba(62, 11, 255, 0.75);
+    /* border: 2px solid blue */
+}
+
 .blob1 {
     z-index: 1;
     position: absolute;
-    width: 150px;
-    height: 150px;
-    background: red;
+    width: 120px;
+    height: 120px;
+    /* background: red; */
     /* border-radius: 38% 62% 36% 52% / 22% 36% 55% 76%; */
     animation: blob1 4s infinite ease-in-out;
-    filter: blur(.5);
+    filter: blur(.1px);
+    background: hsla(152, 100%, 50%, 1);
+
+    background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1);
 }
 
 @keyframes blob1 {
@@ -25,67 +41,90 @@ body {
     0%,
     100% {
         border-radius: 100% 62% 71% 93% / 72% 36% 88% 91%;
-        background-color: brown;
+        /* background-color: brown; */
+
     }
 
     25% {
         border-radius: 100% 74% 78% 51% / 90% 63% 71% 48%;
-        background-color: rebeccapurple;
+        /* background-color: rebeccapurple; */
     }
 
     50% {
         border-radius: 51% 74% 15% 100% / 90% 44% 41% 77%;
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
     }
 
     75% {
-        border-radius: 51% 74% 79% 0% / 51% 17% 76% 77%;
-        background-color: palegoldenrod;
+        /* border-radius: 51% 74% 79% 0% / 51% 17% 76% 77%; */
+        /* background-color: palegoldenrod; */
     }
 }
 
 .blob2 {
     position: relative;
 
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     /* background: red; */
     /* border-radius: 38% 62% 36% 52% / 22% 36% 55% 76%; */
     animation: blob2 5s infinite ease-in-out;
+    filter: blur(.1px);
+    background: hsla(33, 100%, 53%, 1);
+
+    background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF930F", endColorstr="#FFF95B", GradientType=1);
+
 }
 
 @keyframes blob2 {
 
     0%,
     100% {
-        border-radius: 51% 74% 79% 0% / 51% 17% 76% 77%;
-        background-color: aquamarine;
+        border-radius: 100% 62% 71% 93% / 72% 36% 88% 91%;
+        /* background-color: aquamarine; */
     }
 
     25% {
-        border-radius: 100% 62% 71% 93% / 72% 36% 88% 91%;
-        background-color: brown;
+        /* background-color: brown; */
+        /* border-radius: 51% 74% 79% 0% / 51% 17% 76% 77%; */
     }
 
     50% {
         border-radius: 100% 74% 78% 51% / 90% 63% 71% 48%;
-        background-color: palegoldenrod;
+        /* background-color: palegoldenrod; */
     }
 
     75% {
         border-radius: 51% 74% 15% 100% / 90% 44% 41% 77%;
-        background-color: rebeccapurple;
+        /* background-color: rebeccapurple; */
     }
 }
 
 .blob3 {
     z-index: -1;
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
     /* background: red; */
     /* border-radius: 38% 62% 36% 52% / 22% 36% 55% 76%; */
     animation: blob3 5s infinite ease-in-out;
+    filter: blur(.1px);
+    background: hsla(238, 100%, 71%, 1);
+
+    background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1);
+
 }
 
 @keyframes blob3 {
@@ -93,21 +132,21 @@ body {
     0%,
     100% {
         border-radius: 100% 62% 71% 93% / 72% 36% 88% 91%;
-        background-color: darkcyan;
+        /* background-color: darkcyan; */
     }
 
     25% {
-        border-radius: 51% 74% 79% 0% / 51% 17% 76% 77%;
-        background-color: hotpink;
+        /* border-radius: 51% 74% 79% 0% / 51% 17% 76% 77%; */
+        /* background-color: hotpink; */
     }
 
     50% {
         border-radius: 51% 74% 15% 100% / 90% 44% 41% 77%;
-        background-color: paleturquoise;
+        /* background-color: paleturquoise; */
     }
 
     75% {
         border-radius: 100% 74% 78% 51% / 90% 63% 71% 48%;
-        background-color: lawngreen;
+        /* background-color: lawngreen; */
     }
 }
