@@ -3,3 +3,4 @@
 
 // alert(a+b);
 console.log('Hello World');
+alert("Bruh")

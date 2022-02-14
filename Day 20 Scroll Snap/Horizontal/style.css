@@ -1,16 +1,16 @@
 html {
     background-color: black;
     scroll-snap-type: x mandatory;
-    /* overflow-x: hidden; */
+    overflow-y: hidden;
 }
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
-    scrollbar-width: auto;
-    scrollbar-color: #8f54a0 #ffffff;
-    width: 0;
-    height: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #fbf9fc #000000;
+    /* width: 0; */
+    /* height: 0; */
 }
 
 /* Chrome, Edge, and Safari */
@@ -46,6 +46,7 @@ body {
     z-index: 1;
     top: 0;
 }
+
 
 .header-element {
     font-size: 25px;
