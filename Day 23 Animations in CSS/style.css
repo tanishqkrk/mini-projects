@@ -41,21 +41,25 @@ body {
     0%,
     100% {
         border-radius: 100% 62% 71% 93% / 72% 36% 88% 91%;
+        /* transform: translateY(10px) */
         /* background-color: brown; */
 
     }
 
     25% {
         border-radius: 100% 74% 78% 51% / 90% 63% 71% 48%;
+        /* transform: translateY(-10px) */
         /* background-color: rebeccapurple; */
     }
 
     50% {
         border-radius: 51% 74% 15% 100% / 90% 44% 41% 77%;
+        /* transform: translateY(5px) */
         /* background-color: aquamarine; */
     }
 
     75% {
+        /* transform: translateY(10px) */
         /* border-radius: 51% 74% 79% 0% / 51% 17% 76% 77%; */
         /* background-color: palegoldenrod; */
     }
@@ -68,7 +72,7 @@ body {
     height: 180px;
     /* background: red; */
     /* border-radius: 38% 62% 36% 52% / 22% 36% 55% 76%; */
-    animation: blob2 5s infinite ease-in-out;
+    animation: blob2 3s infinite ease-in-out;
     filter: blur(.1px);
     background: hsla(33, 100%, 53%, 1);
 
@@ -93,15 +97,18 @@ body {
     25% {
         /* background-color: brown; */
         /* border-radius: 51% 74% 79% 0% / 51% 17% 76% 77%; */
+        /* transform: translateY(-10px) */
     }
 
     50% {
         border-radius: 100% 74% 78% 51% / 90% 63% 71% 48%;
+        /* transform: translateY(5px) */
         /* background-color: palegoldenrod; */
     }
 
     75% {
         border-radius: 51% 74% 15% 100% / 90% 44% 41% 77%;
+        /* transform: translateY(10px) */
         /* background-color: rebeccapurple; */
     }
 }
@@ -113,7 +120,7 @@ body {
     height: 250px;
     /* background: red; */
     /* border-radius: 38% 62% 36% 52% / 22% 36% 55% 76%; */
-    animation: blob3 5s infinite ease-in-out;
+    animation: blob3 3s infinite ease-in-out;
     filter: blur(.1px);
     background: hsla(238, 100%, 71%, 1);
 
@@ -136,17 +143,20 @@ body {
     }
 
     25% {
+        /* transform: translateY(-10px) */
         /* border-radius: 51% 74% 79% 0% / 51% 17% 76% 77%; */
         /* background-color: hotpink; */
     }
 
     50% {
         border-radius: 51% 74% 15% 100% / 90% 44% 41% 77%;
+        /* transform: translateY(5px) */
         /* background-color: paleturquoise; */
     }
 
     75% {
         border-radius: 100% 74% 78% 51% / 90% 63% 71% 48%;
+        /* transform: translateY(10px) */
         /* background-color: lawngreen; */
     }
 }
