@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -10,24 +10,28 @@ body {
 }
 
 .blob {
-    width: 150px;
-    height: 150px;
-    background-color: white;
+    width: 200px;
+    /* width: 150px; */
+    /* height: 150px; */
+    /* background-color: white; */
     /* position: absolute; */
-    animation: move .5s forwards infinite alternate ease-out;
-    border-radius: 100%;
+    animation: bounce .5s forwards infinite alternate ease-out;
+    /* border-radius: 100%; */
     /* transition: .3s; */
 }
 
-@keyframes move {
+@keyframes bounce {
     0% {
         /* all: none; */
     }
 
+    .1% {
+        transform: rotate(35deg);
+    }
+
     100% {
         /* max-width: 100%; */
-        transform: translateY(-70vh);
-
+        transform: translateY(-20vh);
 
     }
 }
