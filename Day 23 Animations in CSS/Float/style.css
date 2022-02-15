@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.blob {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    /* position: absolute; */
+    animation: move .5s forwards infinite alternate ease-out;
+    border-radius: 100%;
+    /* transition: .3s; */
+}
+
+@keyframes move {
+    0% {
+        /* all: none; */
+    }
+
+    100% {
+        /* max-width: 100%; */
+        transform: translateY(-70vh);
+
+
+    }
+}
