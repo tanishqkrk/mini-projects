@@ -9,6 +9,7 @@ body {
     justify-content: center;
     /* justify-items: flex-end; */
     align-items: flex-end;
+    user-select: none;
 
 }
 
@@ -39,6 +40,16 @@ body {
     justify-content: flex-end;
     /* justify-items: flex-end; */
     align-items: center;
+}
+
+.blob:active {
+    /* width: 15px; */
+    animation: none;
+}
+
+.blob:active+.shadow {
+    /* width: 15px; */
+    animation: none;
 }
 
 @keyframes bounce {
