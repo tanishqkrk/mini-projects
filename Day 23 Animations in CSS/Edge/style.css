@@ -5,12 +5,36 @@ body {
     display: flex;
     justify-content: start;
     align-items: flex-end;
+    overflow: hidden;
+    /* background: red; */
 }
 
 .car-car {
-    width: 30vw;
-    top: 0;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: flex-end; */
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* bottom: -10vh; */
+    width: 20vw;
+    /* background-color: transparent; */
+    animation: edge 5s ease infinite;
+}
+
+@keyframes edge {
+    0% {}
+
+    25% {
+        transform: translateX(80vw);
+    }
+
+    50% {
+        transform: translateY(-80vh) translateX(80vw) rotate(-90deg);
+
+    }
+
+    75% {
+        transform: translateY(-80vh) rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
