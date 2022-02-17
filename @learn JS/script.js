@@ -1,7 +1,6 @@
-"use strict"
-// let a = Number(prompt('Enter a: '));  
-// let b = Number(prompt('Enter b: '));
+let number1 = parseInt(prompt("Enter number 1: "));
+let number2 = parseInt(prompt("Enter number 2: "));
+// let number2 = .prompt("Enter number 2: ");
 
-// alert(a+b);
-console.log('Hello World');
-alert("Bruh")
+let sum = number1 + number2;
+console.log(sum);

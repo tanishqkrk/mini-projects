@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(157, 214, 183);
+    overflow: hidden;
+
+}
+
+.ball {
+    /* max-width: 100vw; */
+
+}
+
+.ball-ball {
+    width: 20vw;
+    animation: roll 5s forwards infinite alternate ease-in-out;
+    max-width: 100vw;
+
+}
+
+@keyframes roll {
+    0% {}
+
+    100% {
+        transform: translate(80vw) rotate(180deg);
+        /* max-width: 100vw; */
+    }
+}

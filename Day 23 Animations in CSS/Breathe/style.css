@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.shape {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(red, rgb(233, 0, 97));
+    border-radius: 60% 55% 93% 82% / 95% 53% 90% 62%;
+    animation: breathe 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes breathe {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+
+        transform: translateY(-10px) rotate(5deg);
+
+    }
+}
