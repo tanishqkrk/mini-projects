@@ -1,6 +1,16 @@
-let number1 = parseInt(prompt("Enter number 1: "));
-let number2 = parseInt(prompt("Enter number 2: "));
-// let number2 = .prompt("Enter number 2: ");
+// let a = document.querySelector(".box");
+// console.log(a);
 
-let sum = number1 + number2;
-console.log(sum);
+// function changeColor(){
+    // document.getElementsByTagName('btn').style.background = 'blue'
+// }
+// document.getElementById('btn').onclick = changeColor(   );
+
+// document.write("full mastiiii")
+// console.warn("Tanishq")
+// console.error("Tanishq")
+// console.log("Tanishq")
+// console.assert("Tanishq")
+
+// var userName = "Tanishq";
+// alert(userName)
