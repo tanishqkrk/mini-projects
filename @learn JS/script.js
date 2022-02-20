@@ -1,16 +1,28 @@
-// let a = document.querySelector(".box");
-// console.log(a);
+function result(){
+    let englishMarks = Number(prompt("Enter english marks: "));
+    let mathMarks = Number(prompt("Enter math marks: "));
+    let scienceMarks = Number(prompt("Enter science marks: "));
 
-// function changeColor(){
-    // document.getElementsByTagName('btn').style.background = 'blue'
-// }
-// document.getElementById('btn').onclick = changeColor(   );
+    let marksAverage = (englishMarks+mathMarks+scienceMarks)/3;
+    console.log(marksAverage);
+    if (marksAverage >= 90 && marksAverage<=100){
+        console.log('A');
+    }
+    else if (marksAverage >= 80 && marksAverage <= 89){
+        console.log('B');
+    }
+    else if (marksAverage>=70 && marksAverage <= 79){
+        console.log('C');
+    }
+    else if (marksAverage>=60 && marksAverage<=69){
+        console.log('D');
+    }
+    else if (marksAverage>=0 && marksAverage <= 59){
+        console.log('F');
+    }
+    else{
+        console.log('Enter correct marks!');
+    }
+}
 
-// document.write("full mastiiii")
-// console.warn("Tanishq")
-// console.error("Tanishq")
-// console.log("Tanishq")
-// console.assert("Tanishq")
-
-// var userName = "Tanishq";
-// alert(userName)
+console.log(result());
