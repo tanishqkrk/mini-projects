@@ -14,6 +14,7 @@ body {
 }
 
 .lister {
+    padding: 20px;
     /* border: 1px solid grey; */
     height: auto;
     width: 800px;
@@ -97,9 +98,29 @@ body {
 }
 
 .lister-items-item {
+    display: flex;
+    justify-content: space-between;
     margin: 10px 0;
     /* border-bottom: .1px solid white; */
     list-style: none;
     width: 80%;
+}
 
+.lister-input-search {
+    margin: 10px 0;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    border-bottom: .5px solid white;
+}
+
+.lister-input-search:focus {
+    outline: none;
+    color: white;
+}
+
+.lister-input-search:focus::placeholder {
+    color: transparent;
 }
