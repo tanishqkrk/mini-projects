@@ -13,7 +13,7 @@ function addNote(e){
     deleteBtn.className = 'fa-solid fa-trash';
     newItem.className = 'content__notes--note col-md-3 m-2';
     // console.log(newItem);
-    newItem.innerHTML = input;
+    newItem.innerText = input;
     deleteBtn.addEventListener('click', removeItem);
     // console.log(newItem);
     newItem.append(deleteBtn);

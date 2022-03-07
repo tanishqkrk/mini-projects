@@ -14,6 +14,7 @@ body {
 }
 
 .header {
+    padding: 10px;
     height: 5vh;
     margin-bottom: 5vh;
     /* color: white; */
@@ -61,21 +62,25 @@ body {
 }
 
 .content__noteArea--input {
-    height: 20vh;
+    display: flex;
+    flex-direction: column;
+
+    height: 10vh;
     width: 30vw;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 5vh;
     background-color: #F5F2E7;
     /* box-shadow: none; */
     border: none;
     transition: .3s;
     /* overflow-x: hidden; */
+    /* max-width: 30vw; */
 }
 
 .content__noteAreap--submit {
     width: 10vw;
     margin-bottom: 5vh;
-
+    outline: none;
     border: 0;
     border-radius: 20px;
     height: 30px;
@@ -83,10 +88,18 @@ body {
     color: white;
 }
 
+.content__noteAreap--submit:focus {
+    outline: none;
+}
+
+.content__noteAreap--submit:active {
+    transform: scale(.8);
+}
+
 .content__noteArea--input:focus {
     /* position: sticky; */
-    width: 50vw;
-    height: 30vh;
+    width: 40vw;
+    height: 20vh;
     top: 0;
     bottom: 0;
     outline: none;
@@ -122,4 +135,20 @@ body {
 
 .fa-solid:active {
     transform: scale(.8);
+}
+
+@media (max-width: 768px) {
+    .content__noteArea--input {
+        width: 80vw;
+    }
+
+    .content__noteAreap--submit {
+        width: 40vw;
+    }
+
+    .content__noteArea--input:focus {
+        /* position: sticky; */
+        width: 90vw;
+        height: 20vh;
+    }
 }
