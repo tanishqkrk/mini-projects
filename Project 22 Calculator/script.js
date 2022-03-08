@@ -65,7 +65,7 @@ percent.addEventListener('click', function(){
     display.textContent  += percent.innerText;
 })
 clear.addEventListener('click', function(){
-    calc.reset();
+    display.innerHTML = ''
 })
 
 function calculate(e){
