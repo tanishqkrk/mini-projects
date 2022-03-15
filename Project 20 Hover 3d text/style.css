@@ -38,4 +38,5 @@ div:hover {
         -16px 16px .1px grey,
         -17px 17px .1px grey,
         -18px 18px .1px grey;
+    transform: rotate(-2deg);
 }
