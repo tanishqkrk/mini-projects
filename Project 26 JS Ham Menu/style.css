@@ -44,7 +44,7 @@ body {
 }
 
 .ham {
-    border-radius: 100%;
+    /* border-radius: 100%; */
     width: 30px;
     height: 3px;
     background-color: black;
