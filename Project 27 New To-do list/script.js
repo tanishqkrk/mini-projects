@@ -2,9 +2,7 @@ let form = document.querySelector('.todoList');
 let button = document.querySelector('.button');
 let check = document.querySelector('.item-check');
 let input = document.querySelector('.input');
-let list = document.querySelector('.items');
-let newItem = document.createElement('li');
-let newIcon = document.createElement('i');
+
 
 
 form.addEventListener('submit', addItem)
@@ -20,8 +18,6 @@ function addItem(e){
             input.value = ''
         }
 }
-
-
 function displayWarningAlert(){
     document.querySelector('.noitemAlert').style.opacity = '1';
     setTimeout(function(){document.querySelector('.noitemAlert').style.opacity = '0'}, 1000)
@@ -35,21 +31,24 @@ function delAlert(){
     setTimeout(function(){document.querySelector('.delAlert').style.opacity = '0'}, 1000)
 }
 function addItemToList(e){
+    let list = document.querySelector('.items');
+    let newItem = document.createElement('li');
+    let newIcon = document.createElement('i');
     newItem.innerText = input.value;
     newItem.className = 'item';
     newIcon.className = 'fa-solid fa-check item-check'
-    newItem.appendChild(newIcon);
-    list.appendChild(newItem);
+    newItem.append(newIcon);
+    list.append(newItem);
+    newItem.addEventListener('click', e=>{
+        if(e.target.classList.contains('item-check')){
+            // console.log('1');
+            let itemToDelete = e.target.parentElement;
+            list.removeChild(itemToDelete);
+            delAlert();
+        }
+    })
 }
 
-newItem.addEventListener('click', e=>{
-    if(e.target.classList.contains('item-check')){
-        // console.log('1');
-        let itemToDelete = e.target.parentElement;
-        list.removeChild(itemToDelete);
-        delAlert();
-    }
-})
 
 document.querySelector('.clear').addEventListener('click', e=>{
     location.reload()
