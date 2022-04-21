@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <form method="post" action="" class="form">
+            <h1>Let's connect!</h1>
+            <div class="fname form-div">
+                <label for="name">Name</label><input type="text" class="name typebox" id="name">
+            </div>
+            <div class="femail form-div">
+                <label for="name">Email</label><input type="email" class="email typebox" id="email">
+            </div>
+            <div class="fnumber form-div">
+                <label for="name">Phone no.</label>
+                <div class="number">
+                    <select name="code" id="code">
+                        <option value="">+91</option>
+                    </select>
+                    <input type="number" name="" id="phone" class="typebox">
+                </div>
+            </div>
+            <div class="fmessage form-div">
+                <label for="name">Message</label>
+                <input type="text" class="message typebox" id="message">
+            </div>
+            <div class="fbutton">
+                <button type="submit" id="button">Contact us</button>
+            </div>
+        </form>
+        <div class="img">
+            <img src="./icon.png" alt="">
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>

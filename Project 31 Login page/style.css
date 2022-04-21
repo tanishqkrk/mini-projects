@@ -1,0 +1,52 @@
+body > *:not(.form){
+    opacity: .8;
+    filter: blur(5px);
+    user-select: none;
+}
+body{
+    /* background: url(./pic.jpg); */
+}
+
+.form{
+    transition: .3s;
+box-shadow: 0 0 5px  black;
+background-color: white;
+width: 20vw;
+height: 40vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: absolute;
+top: 20%;
+left: 40%;
+border-radius: 20px;
+}
+.field{
+    margin: auto 0;
+    /* width: 100%; */
+}
+input{
+    border: none;
+    border-bottom: 1px solid rgb(47, 189, 255);
+    height: 50px;
+    font-size: 1.1em;
+    /* width: 80%; */
+}
+input:focus{
+    outline:none;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+button{
+    background-color: rgb(47, 189, 255);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.text{
+    font-size: 2em;
+}
