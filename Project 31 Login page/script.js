@@ -3,8 +3,8 @@ let passwordField = document.querySelector('#password');
 let button = document.querySelector('button');
 let form = document.querySelector('.form');
 
-const username = '1';
-const password = '1';
+const username = 'honeybun';
+const password = 'buttercup';
 
 form.addEventListener('submit', unlockPage);
 
