@@ -8,6 +8,7 @@
     <title>Foxx Café</title>
     <script src="https://kit.fontawesome.com/cffed4b148.js" crossorigin="anonymous"></script>
     <script src="./script.js" defer></script>
+    <script src="./selectors.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assests/logo.png" type="image/x-icon">
 </head>
@@ -21,8 +22,8 @@
             <div class="header__logo--name">Foxx Café</div>
         </div>
         <div class="header__links">
-            <div class="header__links--link"><a href="#home"
-                    class="header__links--link-link header__links--link-link-active">Home</a></div>
+            <!-- For active links, for future features -  header__links--link-link-active -->
+            <div class="header__links--link"><a href="#home" class="header__links--link-link ">Home</a></div>
             <div class="header__links--link"><a href="#menu" class="header__links--link-link">Menu</a></div>
             <div class="header__links--link"><a href="#services" class="header__links--link-link">Services</a></div>
             <div class="header__links--link"><a href="#branches" class="header__links--link-link">Branches</a></div>
@@ -104,7 +105,7 @@
                         🍔</div>
                     <div class="content__menu--menu-items-item content__menu--menu-items-pizza">Pizza 🍕</div>
                     <div class="content__menu--menu-items-item content__menu--menu-items-icecream">Ice Cream 🍧</div>
-                    <div class="content__menu--menu-items-item content__menu--menu-items-coffee">Shakes ☕</div>
+                    <div class="content__menu--menu-items-item content__menu--menu-items-shakes">Shakes ☕</div>
                 </div>
                 <div class="menu-line"></div>
                 <div class="content__menu--menu-food">
@@ -195,67 +196,67 @@
                     </div>
 
                     <div class="content__menu--menu-food-food content__menu--menu-food-pizza">
-                        <div class="content__menu--menu-food-food content__menu--menu-food-pizza">
-                            <div class="content__menu--food-food-card">
-                                <div class="content__menu--menu-food-food-img"><img loading="lazy"
-                                        src="./assests/pizza1.png" alt="" class="content__menu--menu-food-food-img-img">
-                                </div>
-                                <div class="content__menu--menu-food-food-title">Chicken Pizza with veges</div>
-                                <div class="content__menu--menu-food-food-price">$3.085</div>
-                                <div class="counter">
-                                    <span class="min">-</span>
-                                    <input type="number" class="number" value="0"></input>
-                                    <span class="plus">+</span>
-                                </div>
-                                <div class="cart-button">Add</div>
-
+                        <!-- <div class="content__menu--menu-food-food content__menu--menu-food-pizza"> -->
+                        <div class="content__menu--food-food-card">
+                            <div class="content__menu--menu-food-food-img"><img loading="lazy"
+                                    src="./assests/pizza1.png" alt="" class="content__menu--menu-food-food-img-img">
                             </div>
-                            <div class="content__menu--food-food-card">
-                                <div class="content__menu--menu-food-food-img"><img loading="lazy"
-                                        src="./assests/pizza2.png" alt="" class="content__menu--menu-food-food-img-img">
-                                </div>
-                                <div class="content__menu--menu-food-food-title">Veges Pizza</div>
-                                <div class="content__menu--menu-food-food-price">$6</div>
-                                <div class="counter">
-                                    <span class="min">-</span>
-                                    <input type="number" class="number" value="0"></input>
-                                    <span class="plus">+</span>
-                                </div>
-                                <div class="cart-button">Add</div>
-
+                            <div class="content__menu--menu-food-food-title">Chicken Pizza with veges</div>
+                            <div class="content__menu--menu-food-food-price">$3.085</div>
+                            <div class="counter">
+                                <span class="min">-</span>
+                                <input type="number" class="number" value="0"></input>
+                                <span class="plus">+</span>
                             </div>
-                            <div class="content__menu--food-food-card">
-                                <div class="content__menu--menu-food-food-img"><img loading="lazy"
-                                        src="./assests/pizza3.png" alt="" class="content__menu--menu-food-food-img-img">
-                                </div>
-                                <div class="content__menu--menu-food-food-title">Classic Pizza</div>
-                                <div class="content__menu--menu-food-food-price">$7.05</div>
-                                <div class="counter">
-                                    <span class="min">-</span>
-                                    <input type="number" class="number" value="0"></input>
-                                    <span class="plus">+</span>
-                                </div>
-                                <div class="cart-button">Add</div>
+                            <div class="cart-button">Add</div>
 
-                            </div>
                         </div>
+                        <div class="content__menu--food-food-card">
+                            <div class="content__menu--menu-food-food-img"><img loading="lazy"
+                                    src="./assests/pizza2.png" alt="" class="content__menu--menu-food-food-img-img">
+                            </div>
+                            <div class="content__menu--menu-food-food-title">Veges Pizza</div>
+                            <div class="content__menu--menu-food-food-price">$6</div>
+                            <div class="counter">
+                                <span class="min">-</span>
+                                <input type="number" class="number" value="0"></input>
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="cart-button">Add</div>
+
+                        </div>
+                        <div class="content__menu--food-food-card">
+                            <div class="content__menu--menu-food-food-img"><img loading="lazy"
+                                    src="./assests/pizza3.png" alt="" class="content__menu--menu-food-food-img-img">
+                            </div>
+                            <div class="content__menu--menu-food-food-title">Classic Pizza</div>
+                            <div class="content__menu--menu-food-food-price">$7.05</div>
+                            <div class="counter">
+                                <span class="min">-</span>
+                                <input type="number" class="number" value="0"></input>
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="cart-button">Add</div>
+
+                        </div>
+                        <!-- </div> -->
                     </div>
                     <div class="content__menu--menu-food-food content__menu--menu-food-icecream">
-                        <div class="content__menu--menu-food-food content__menu--menu-food-icecream">
-                            <div class="content__menu--food-food-card">
-                                <div class="content__menu--menu-food-food-img"><img src="./assests/ice1.png" alt=""
-                                        class="content__menu--menu-food-food-img-img"></div>
-                                <div class="content__menu--menu-food-food-title">Special Ice cream</div>
-                                <div class="content__menu--menu-food-food-price">$3</div>
-                                <div class="counter">
-                                    <span class="min">-</span>
-                                    <input type="number" class="number" value="0"></input>
-                                    <span class="plus">+</span>
-                                </div>
-                                <div class="cart-button">Add</div>
-
+                        <!-- <div class="content__menu--menu-food-food content__menu--menu-food-icecream"> -->
+                        <div class="content__menu--food-food-card">
+                            <div class="content__menu--menu-food-food-img"><img src="./assests/ice1.png" alt=""
+                                    class="content__menu--menu-food-food-img-img"></div>
+                            <div class="content__menu--menu-food-food-title">Special Ice cream</div>
+                            <div class="content__menu--menu-food-food-price">$3</div>
+                            <div class="counter">
+                                <span class="min">-</span>
+                                <input type="number" class="number" value="0"></input>
+                                <span class="plus">+</span>
                             </div>
+                            <div class="cart-button">Add</div>
+
                         </div>
+                        <!-- </div> -->
                         <div class="content__menu--food-food-card">
                             <div class="content__menu--menu-food-food-img"><img loading="lazy" src="./assests/ice2.png"
                                     alt="" class="content__menu--menu-food-food-img-img">
@@ -286,22 +287,22 @@
                         </div>
                     </div>
                     <div class="content__menu--menu-food-food content__menu--menu-food-shakes">
-                        <div class="content__menu--menu-food-food content__menu--menu-food-shakes">
-                            <div class="content__menu--food-food-card">
-                                <div class="content__menu--menu-food-food-img"><img loading="lazy"
-                                        src="./assests/shake1.png" alt="" class="content__menu--menu-food-food-img-img">
-                                </div>
-                                <div class="content__menu--menu-food-food-title">Milk Shake</div>
-                                <div class="content__menu--menu-food-food-price">$3.085</div>
-                                <div class="counter">
-                                    <span class="min">-</span>
-                                    <input type="number" class="number" value="0"></input>
-                                    <span class="plus">+</span>
-                                </div>
-                                <div class="cart-button">Add</div>
-
+                        <!-- <div class="content__menu--menu-food-food content__menu--menu-food-shakes"> -->
+                        <div class="content__menu--food-food-card">
+                            <div class="content__menu--menu-food-food-img"><img loading="lazy"
+                                    src="./assests/shake1.png" alt="" class="content__menu--menu-food-food-img-img">
                             </div>
+                            <div class="content__menu--menu-food-food-title">Milk Shake</div>
+                            <div class="content__menu--menu-food-food-price">$3.085</div>
+                            <div class="counter">
+                                <span class="min">-</span>
+                                <input type="number" class="number" value="0"></input>
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="cart-button">Add</div>
+
                         </div>
+                        <!-- </div> -->
                         <div class="content__menu--food-food-card">
                             <div class="content__menu--menu-food-food-img"><img loading="lazy"
                                     src="./assests/shake2.png" alt="" class="content__menu--menu-food-food-img-img">

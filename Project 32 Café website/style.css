@@ -11,6 +11,7 @@
     scrollbar-width: auto;
     scrollbar-color: var(--theme-color) #ffffff;
     user-select: none;
+    transition: .3s;
   }
 
   /* Chrome, Edge, and Safari */
@@ -314,26 +315,27 @@ body{
 }
 
 .content__menu--menu-food-burger{
-    /* display: none; */
     display: flex;
 }
 .content__menu--menu-food-pizza{
     display: none;
-    /* display: flex; */
-
 }
 .content__menu--menu-food-icecream{
-    /* display: flex; */
     display: none;
 
 }
 .content__menu--menu-food-shakes{
     display: none;
-    /* display: flex; */
 }
 .content__menu--menu-food-food-img-img{
     width: 20rem;
 }
+.menuItemOn{
+    display: flex;
+}
+/* .defaultItemOn{
+    display: flex;
+} */
 .content__menu--menu-food{
     display: flex;
     overflow-x: scroll;
