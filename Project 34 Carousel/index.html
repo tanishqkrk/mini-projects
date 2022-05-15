@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <script src="./script.js" defer></script>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: none;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .on {
+            display: block;
+        }
+
+        .off {
+            display: none;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            margin: 0 2vw;
+            padding: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="previous">P</button>
+    <div class="container">
+        <div class="a"><img class='on' src="./assests/r10.jpeg">
+        </div>
+        <div class="a"><img src="./assests/v2.jpeg">
+        </div>
+        <div class="a"><img src="./assests/v3.jpeg">
+        </div>
+    </div>
+    <button class="next">N</button>
+
+
+</body>
+
+</html>
