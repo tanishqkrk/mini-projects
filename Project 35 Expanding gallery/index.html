@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<style>
+    body {
+        transition: .3s;
+        /* width: auto; */
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        /* overflow-y: hidden; */
+    }
+
+    img {
+        transition: .5s;
+        height: 80vh;
+        width: 8vw;
+        object-fit: cover;
+        margin: 0 0.2em;
+        border-radius: 50px;
+        filter: brightness(.8);
+        cursor: pointer;
+        /* filter: blur(2px); */
+        /* height: 500%; */
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .active {
+        width: 50vw;
+        filter: brightness(1);
+        cursor: auto;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="./assests/1.jpg" alt="" class="image imageOne active">
+        <img src="./assests/2.png" alt="" class="image imageTwo">
+        <img src="./assests/3.jpg" alt="" class="image imageThree">
+        <img src="./assests/4.png" alt="" class="image imageFour">
+    </div>
+</body>
+<script>
+    let images = document.querySelectorAll('.image');
+    images.forEach(image => {
+        image.addEventListener('click', x => {
+            removeCurrentClass()
+            image.classList.add('active')
+        })
+    })
+
+    function removeCurrentClass() {
+        images.forEach(image => {
+            image.classList.remove('active')
+        })
+    }
+    // document.querySelector('.imageThree').click()
+</script>
+
+</html>

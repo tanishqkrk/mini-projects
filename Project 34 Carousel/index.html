@@ -8,19 +8,26 @@
     <title>Carousel</title>
     <script src="./script.js" defer></script>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         img {
             width: 200px;
             height: 200px;
             object-fit: cover;
-            display: none;
+            /* display: none; */
+            margin: 0 1em;
         }
 
         .container {
             display: flex;
-        }
+            max-width: 30vw;
+            overflow-x: scroll;
+            transition: .3s;
+            scroll-behavior: smooth;
 
-        .on {
-            display: block;
+
         }
 
         .off {
@@ -28,6 +35,7 @@
         }
 
         body {
+            transition: .3s;
             display: flex;
             height: 100vh;
             justify-content: center;
