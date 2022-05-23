@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --primary-color: rgb(38, 194, 255);
+    }
+
+    body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        user-select: none;
+        transition: .3s;
+    }
+
+    .content {
+        /* border: 1px solid red; */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40%;
+    }
+
+    .bar {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .circle {
+        background-color: whitesmoke;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        outline: 3px solid grey;
+        font-weight: 800;
+        transition: .5s;
+    }
+
+    .active {
+        outline-color: white;
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    button {
+        margin: 0 2em;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 1em;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    button:disabled {
+        background-color: grey;
+        cursor: not-allowed;
+    }
+
+    .progress {
+        position: absolute;
+        background-color: rgb(218, 218, 218);
+        width: 100%;
+        top: 40%;
+        z-index: -1;
+        height: 5px;
+    }
+
+    .progressBar {
+        position: absolute;
+        background-color: var(--primary-color);
+        /* width: 20%; */
+        width: 0;
+        top: 40%;
+        left: 0;
+        z-index: -1;
+        height: 5px;
+        transition: .5s;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <div class="bar">
+            <div class="progress"></div>
+            <div class="progressBar"></div>
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+            <div class="circle">6</div>
+        </div>
+        <div class="buttons">
+            <button class="previous" disabled>Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+
+    <script>
+        let bar = document.querySelector('.progressBar');
+        let next = document.querySelector('.next');
+        let previous = document.querySelector('.previous');
+        let circles = document.querySelectorAll('.circle');
+
+        let circleState = 0;
+        let BarWidth = 0;
+        let barShift = 20;
+        next.addEventListener('click', e => {
+            circleState++;
+            bar.style.width = `${BarWidth + barShift}%`;
+            circles[circleState].classList.add('active');
+            BarWidth += barShift;
+            if (circleState > 0) {
+                previous.removeAttribute('disabled')
+            }
+            if (BarWidth == 100) {
+                next.setAttribute('disabled', "")
+            }
+        })
+        previous.addEventListener('click', e => {
+            next.removeAttribute('disabled')
+            bar.style.width = `${BarWidth - barShift}%`;
+            circles[circleState].classList.remove('active');
+            BarWidth -= barShift;
+            circleState--;
+            if (BarWidth == 0) {
+                previous.setAttribute('disabled', "")
+            }
+        })
+    </script>
+</body>
+
+</html>
