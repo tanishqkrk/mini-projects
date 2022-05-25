@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {}
+
+        body {
+            background-color: rgb(57, 57, 57);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            user-select: none;
+
+            /* transform: rotate(-10deg); */
+        }
+
+        p {
+            width: 30vw;
+        }
+
+        .ham {
+            position: fixed;
+            left: -100px;
+            top: -100px;
+            background-color: rgb(146, 146, 255);
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            display: flex;
+            justify-content: end;
+            align-items: flex-end;
+            font-size: 3em;
+            padding: 1em;
+            z-index: 1;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            transition: .3s;
+            /* transform: scale(.8) */
+        }
+
+        .active {
+            /* transform: scale(.8); */
+            /* transform: rotate(-10deg); */
+            transform: rotate(-10deg) translateX(20em) translateY(-10em);
+        }
+
+        .hamItems {
+            position: fixed;
+            bottom: 5%;
+            left: 1%;
+            color: white;
+            z-index: -1;
+        }
+
+        .item {
+            margin: 2em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hamItems">
+        <div class="item">Home</div>
+        <div class="item">About us</div>
+        <div class="item">Contact</div>
+    </div>
+    <div class="ham">🍔</div>
+    <div class="content">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nihil in assumenda, ea possimus hic,
+            doloribus, fuga nulla porro ipsam vitae. Maiores rem at eos, aliquid nam esse cum distinctio, placeat velit
+            vel
+            doloremque nihil accusamus quas fuga delectus eum?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sit velit fugiat reprehenderit quibusdam
+            eaque. Eum aut odio consequatur est consequuntur, magni recusandae commodi fuga eaque molestiae vitae totam
+            iste
+            unde molestias ex odit deleniti, accusamus voluptates repudiandae numquam laboriosam. Quidem possimus nihil
+            quod
+            consectetur illo maiores assumenda optio ullam veniam, sapiente, nulla in quam ad debitis aliquid id placeat
+            nam
+            odit! Ex sit assumenda pariatur aut veritatis magnam corporis praesentium consequuntur! Veritatis, quaerat,
+            nobis facere dolore earum iusto rem perferendis minima doloribus vel aliquid architecto magnam sed quas
+            itaque
+            neque eum tempora, labore quidem molestias. Tempora, debitis. Vitae necessitatibus similique ullam nulla?
+            Iure
+            delectus, veniam expedita quaerat officiis facilis itaque, hic molestias consequatur tempore porro nulla
+            placeat
+            et animi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus numquam nam commodi, alias explicabo
+            earum, recusandae ipsum tempora iusto quasi dolore! Nesciunt, veritatis sed? Accusantium vitae quod in
+            laudantium?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nihil in assumenda, ea possimus hic,
+            doloribus, fuga nulla porro ipsam vitae. Maiores rem at eos, aliquid nam esse cum distinctio, placeat velit
+            vel
+            doloremque nihil accusamus quas fuga delectus eum?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sit velit fugiat reprehenderit quibusdam
+            eaque. Eum aut odio consequatur est consequuntur, magni recusandae commodi fuga eaque molestiae vitae totam
+            iste
+            unde molestias ex odit deleniti, accusamus voluptates repudiandae numquam laboriosam. Quidem possimus nihil
+            quod
+            consectetur illo maiores assumenda optio ullam veniam, sapiente, nulla in quam ad debitis aliquid id placeat
+            nam
+            odit! Ex sit assumenda pariatur aut veritatis magnam corporis praesentium consequuntur! Veritatis, quaerat,
+            nobis facere dolore earum iusto rem perferendis minima doloribus vel aliquid architecto magnam sed quas
+            itaque
+            neque eum tempora, labore quidem molestias. Tempora, debitis. Vitae necessitatibus similique ullam nulla?
+            Iure
+            delectus, veniam expedita quaerat officiis facilis itaque, hic molestias consequatur tempore porro nulla
+            placeat
+            et animi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus numquam nam commodi, alias explicabo
+            earum, recusandae ipsum tempora iusto quasi dolore! Nesciunt, veritatis sed? Accusantium vitae quod in
+            laudantium?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nihil in assumenda, ea possimus hic,
+            doloribus, fuga nulla porro ipsam vitae. Maiores rem at eos, aliquid nam esse cum distinctio, placeat velit
+            vel
+            doloremque nihil accusamus quas fuga delectus eum?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sit velit fugiat reprehenderit quibusdam
+            eaque. Eum aut odio consequatur est consequuntur, magni recusandae commodi fuga eaque molestiae vitae totam
+            iste
+            unde molestias ex odit deleniti, accusamus voluptates repudiandae numquam laboriosam. Quidem possimus nihil
+            quod
+            consectetur illo maiores assumenda optio ullam veniam, sapiente, nulla in quam ad debitis aliquid id placeat
+            nam
+            odit! Ex sit assumenda pariatur aut veritatis magnam corporis praesentium consequuntur! Veritatis, quaerat,
+            nobis facere dolore earum iusto rem perferendis minima doloribus vel aliquid architecto magnam sed quas
+            itaque
+            neque eum tempora, labore quidem molestias. Tempora, debitis. Vitae necessitatibus similique ullam nulla?
+            Iure
+            delectus, veniam expedita quaerat officiis facilis itaque, hic molestias consequatur tempore porro nulla
+            placeat
+            et animi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus numquam nam commodi, alias explicabo
+            earum, recusandae ipsum tempora iusto quasi dolore! Nesciunt, veritatis sed? Accusantium vitae quod in
+            laudantium?</p>
+    </div>
+    <script>
+        let ham = document.querySelector('.ham');
+        ham.addEventListener('click', e => {
+            document.querySelector('.content').classList.toggle('active')
+            // if (document.querySelector('.content').classList.contains('active')) {
+            document.body.style.overflowX = 'hidden';
+            // }
+        })
+    </script>
+</body>
+
+</html>
