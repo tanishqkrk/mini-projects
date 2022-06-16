@@ -33,7 +33,7 @@ body {
     width: 300px;
     cursor: text;
     padding-left: 15px;
-    pointer-events: all;
+    /* pointer-events: all; */
 }
 
 .input::placeholder {
