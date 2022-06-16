@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.inputContainer {
+    position: relative;
+    width: fit-content;
+}
+
+.input {
+    width: 50px;
+    height: 50px;
+    transition: .3s;
+    position: relative;
+    border: 5px solid #000;
+    position: relative;
+    padding: 0;
+    font-size: 1.8em;
+    /* user-select: none; */
+    cursor: pointer;
+    pointer-events: none;
+    border-radius: 50px;
+    /* resize: none; */
+}
+
+.inputOn {
+    width: 300px;
+    cursor: text;
+    padding-left: 15px;
+    pointer-events: all;
+}
+
+.input::placeholder {
+    /* opacity: 0; */
+}
+
+/* .input:focus {
+    width: 300px;
+} */
+
+label {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    font-size: 2em;
+    /* right: 0; */
+    /* left: 100%; */
+    transition: .3s;
+    /* top: 100%; */
+}
+
+.labelOn {
+    transform: translateX(120px);
+}
