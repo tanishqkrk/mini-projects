@@ -24,7 +24,7 @@ body {
     font-size: 1.8em;
     /* user-select: none; */
     cursor: pointer;
-    pointer-events: none;
+    /* pointer-events: none; */
     border-radius: 50px;
     /* resize: none; */
 }
